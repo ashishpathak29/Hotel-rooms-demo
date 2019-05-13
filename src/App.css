@@ -1,0 +1,13 @@
+
+.container {
+    max-width: 1400px !important;
+}
+
+div.disabled {
+    opacity: 0.5;
+    background: #CCC;
+    pointer-events: none;
+}
+div.submit-btn {
+    margin-left: 15px;
+}
