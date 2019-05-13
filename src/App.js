@@ -114,6 +114,7 @@ class App extends Component {
                 <div className='container'>
                     <div className='row'>
                         {this.state.hotelRooms.map((room, idx) => (
+                           
                             <div className='col-sm-3' key={idx}>
                                 <div className="card">
                                     {room.roomNo === 1 ?
