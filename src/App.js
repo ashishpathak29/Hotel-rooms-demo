@@ -61,8 +61,8 @@ class App extends Component {
             if (room.roomNo !== 1 && room.roomNo <= selectedRoom && evt.target.checked) {
                 return { ...room, disabled: false, checked: true };
             }
-            if (room.roomNo !== 1 && room.roomNo <= selectedRoom && !evt.target.checked) {
-                return { ...room, disabled: true, checked: false };
+            if (room.roomNo !== 1 && room.roomNo >= selectedRoom && !evt.target.checked) {
+                return { ...room, disabled: true, checked: false, adult: 1, children: 0 };
             }
             if (room.roomNo !== 1 && room.roomNo > selectedRoom) {
                 return { ...room, disabled: true, checked: false };
